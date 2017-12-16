@@ -1,0 +1,42 @@
+:root {
+    --color-blue: #299fd3;
+}
+
+body {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    color: var(--color-blue);
+    outline: none;
+    text-decoration: none;
+}
+
+.header {
+    background-color: var(--color-blue);
+    padding: 0.5em 0.8em;
+    text-align: center;
+}
+
+.header .header__title {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.cat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 18px;
+}

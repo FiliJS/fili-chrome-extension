@@ -1,0 +1,17 @@
+.cat {
+    position: fixed;
+    z-index: 10000;
+    bottom: -80px;
+    right: 100px;
+    animation: get-up 2s;
+}
+
+@keyframes get-up{
+    0% {
+        bottom: -256px;
+    }
+
+    100% {
+        bottom: -80px;
+    }
+}

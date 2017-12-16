@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+
+    "name": "Lovcats",
+    "description": "Small example to work with Chrome extensions: Add a beautiful cat",
+    "version": "0.1.0",
+    "icons": {
+        "128": "images/icon.png"
+    },
+
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "https://filisantillan.com/*",
+                "https://www.google.com.mx/*"
+            ],
+            "css": [
+                "css/cats.css"
+            ],
+            "js": [
+                "js/cats.js"
+            ]
+        }
+    ],
+
+    "web_accessible_resources": [
+        "images/*.png"
+      ],
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
+}
